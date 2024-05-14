@@ -1,20 +1,19 @@
-import './App.css';
 import LoginForm from './components/LoginForm';
 import SignUp from './pages/SignUp';
 import Home from './pages/Home';
+import LoginRegister from './components/LoginRegister/LoginRegister';
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
         <Routes>
           <Route exact path='/home' element={<Home />} />
-          <Route path='/login' element={<LoginForm />} />
+          {/* <Route path='/login' element={<LoginForm />} /> */}
+          <Route path='/login' element={<LoginRegister />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/' element={<Navigate to='/login' />} />
         </Routes>
-      </div>
     </BrowserRouter>
   );
 }
