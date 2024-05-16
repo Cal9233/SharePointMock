@@ -1,4 +1,3 @@
-import LoginForm from './components/LoginForm';
 import SignUp from './pages/SignUp';
 import Home from './pages/Home';
 import LoginRegister from './components/LoginRegister/LoginRegister';

@@ -74,6 +74,7 @@ const LoginRegister = () => {
       }
 
       return (
+        <div className='login-container'>
         <div className={`wrapper${action}`}>
             <div className="form-box login">
                 <form onSubmit={handleLoginSubmit}>
@@ -167,6 +168,7 @@ const LoginRegister = () => {
                     </div>
                 </form>
             </div>
+        </div>
         </div>
     )
 }
